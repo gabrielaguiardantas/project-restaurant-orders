@@ -10,7 +10,7 @@ def test_ingredient():
     ingredient_example2 = Ingredient("queijo")
     ingredient_example3 = Ingredient("ovo")
 
-    # testando as hashes
+    # testando o método de hashes
     assert hash(ingredient_example) == hash(ingredient_example3)
     assert hash(ingredient_example) != hash(ingredient_example2)
 
