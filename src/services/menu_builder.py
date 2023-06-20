@@ -46,8 +46,3 @@ class MenuBuilder:
             ]
             return restricted_dish_list
         return dish_list
-
-
-menu_builder_example = MenuBuilder().get_main_menu(Restriction.ANIMAL_MEAT)
-
-print(menu_builder_example)
