@@ -1,7 +1,5 @@
 from typing import Dict, List
 
-from models.ingredient import Restriction
-
 from services.inventory_control import InventoryMapping
 from services.menu_data import MenuData
 
