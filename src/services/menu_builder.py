@@ -28,14 +28,15 @@ class MenuBuilder:
     def get_main_menu(self, restriction=None) -> List[Dict]:
         dish_list = []
         for dish in self.menu_data.dishes:
-            dish_list.append(
-                {
-                    "dish_name": dish.name,
-                    "ingredients": dish.get_ingredients(),
-                    "price": dish.price,
-                    "restrictions": dish.get_restrictions(),
-                }
-            )
+            if self.inventory.check_recipe_availability(dish.recipe) is True:
+                dish_list.append(
+                    {
+                        "dish_name": dish.name,
+                        "ingredients": dish.get_ingredients(),
+                        "price": dish.price,
+                        "restrictions": dish.get_restrictions(),
+                    }
+                )
         if restriction:
             restricted_dish_list = [
                 dish
@@ -44,3 +45,7 @@ class MenuBuilder:
             ]
             return restricted_dish_list
         return dish_list
+
+
+example_menu = MenuBuilder()
+example_menu.get_main_menu()
