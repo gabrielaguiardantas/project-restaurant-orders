@@ -11,3 +11,4 @@ Vigésimo oitavo projeto do curso de desenvolvimento Web da Trybe e terceiro (ú
 
 # Features implementadas: #
 
+![features-project28](https://github.com/gabrielaguiardantas/project-restaurant-orders/assets/110852595/94e2b243-785f-493e-a8b0-9fc5e80aef3e)
